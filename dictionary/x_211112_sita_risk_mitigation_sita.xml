@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element audit="true" extends="task" label="Mitigation_SITA" max_length="40" name="x_211112_sita_risk_mitigation_sita" sizeclass="12" type="collection">
+        <element label="Associated risk" max_length="32" name="u_associated_risk" reference="x_211112_sita_risk_risk_sita" type="reference"/>
+        <element label="Manager" max_length="32" name="u_manager" reference="sys_user" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="accept" label="Mitigation Category" max_length="40" name="u_mit_category" type="string">
+            <choice>
+                <element label="Accept" sequence="0" value="accept"/>
+                <element label="Operational" sequence="1" value="operational"/>
+                <element label="Financial" sequence="2" value="financial"/>
+                <element label="Design" sequence="3" value="design"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="Submitted" label="Mitigation status" max_length="40" name="u_mit_status" type="string">
+            <choice>
+                <element label="Submitted" sequence="0" value="Submitted"/>
+                <element label="Validated" sequence="1" value="Validated"/>
+                <element label="On going" sequence="2" value="On going"/>
+                <element label="Rejected" sequence="3" value="Rejected"/>
+                <element label="Completed" sequence="4" value="Completed"/>
+            </choice>
+        </element>
+        <element label="Mitigation target completion date" max_length="40" name="u_mit_target" type="glide_date_time"/>
+    </element>
+</database>

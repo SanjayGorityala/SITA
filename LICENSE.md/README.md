@@ -1,2 +1,0 @@
-# SITA
-SITA test application

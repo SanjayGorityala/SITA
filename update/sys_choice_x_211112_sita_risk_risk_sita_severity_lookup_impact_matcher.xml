@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="impact_matcher" table="x_211112_sita_risk_risk_sita_severity_lookup" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>impact_matcher</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>1 - Significant</label>
+            <language>en</language>
+            <name>x_211112_sita_risk_risk_sita_severity_lookup</name>
+            <sequence/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-05-07 14:35:54</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>c7d94c3b4f3113000821a7d18110c76a</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-05-07 15:04:12</sys_updated_on>
+            <value>1</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>impact_matcher</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>2 - Moderate</label>
+            <language>en</language>
+            <name>x_211112_sita_risk_risk_sita_severity_lookup</name>
+            <sequence/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-05-07 14:36:04</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>001a0c3b4f3113000821a7d18110c7cd</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-05-07 15:04:20</sys_updated_on>
+            <value>2</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>impact_matcher</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>3 - Low</label>
+            <language>en</language>
+            <name>x_211112_sita_risk_risk_sita_severity_lookup</name>
+            <sequence/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-05-07 14:36:15</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>361a44f74f3113000821a7d18110c708</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-05-07 15:04:28</sys_updated_on>
+            <value>3</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>impact_matcher</element>
+            <name>x_211112_sita_risk_risk_sita_severity_lookup</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-05-07 14:35:54</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>210a883b4f3113000821a7d18110c7b9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>impact_matcher</sys_name>
+            <sys_package display_value="SITA Risk Management" source="x_211112_sita_risk">dc11d3234f1113000821a7d18110c721</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="SITA Risk Management">dc11d3234f1113000821a7d18110c721</sys_scope>
+            <sys_update_name>sys_choice_x_211112_sita_risk_risk_sita_severity_lookup_impact_matcher</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-05-07 14:35:54</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>

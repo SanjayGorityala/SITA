@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_211112_sita_risk.Associated Mitigation</api_name>
+        <client_callable>true</client_callable>
+        <description/>
+        <name>Associated Mitigation</name>
+        <script><![CDATA[var GetAssociatedMitigation =  Class.create();
+
+GetAssociatedMitigation.prototype = Object.extendsobject(global.AbstractAjaxProcessor,{
+	getMitigation: function(){
+		var mitigaiton = new GlideRecord('x_211112_sita_risk_mitigation_sita');
+		mitigaiton.get(this.getParameter('sysparm_number'));
+		return mitigaiton.u_mit_status+'';
+	},
+	type: 'GetAssociatedMitigation'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-04-15 16:56:15</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>2446dba84f6d13000821a7d18110c791</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Associated Mitigation</sys_name>
+        <sys_package display_value="SITA Risk Management" source="x_211112_sita_risk">dc11d3234f1113000821a7d18110c721</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="SITA Risk Management">dc11d3234f1113000821a7d18110c721</sys_scope>
+        <sys_update_name>sys_script_include_2446dba84f6d13000821a7d18110c791</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-04-18 17:12:11</sys_updated_on>
+    </sys_script_include>
+</record_update>

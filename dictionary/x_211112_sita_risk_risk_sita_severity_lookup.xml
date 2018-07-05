@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element attributes="update_synch=true" extends="dl_matcher" label="Risk_SITA Severity Lookup" max_length="40" name="x_211112_sita_risk_risk_sita_severity_lookup" type="collection">
+        <element choice="1" label="Impact Matcher" max_length="40" name="impact_matcher" type="choice">
+            <choice>
+                <element label="1 - Significant" value="1"/>
+                <element label="2 - Moderate" value="2"/>
+                <element label="3 - Low" value="3"/>
+            </choice>
+        </element>
+        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" choice="1" label="Probability Matcher" max_length="40" name="probability_matcher" type="choice">
+            <choice>
+                <element label="1 - High" value="1"/>
+                <element label="2 - Medium" value="2"/>
+                <element label="3 - Low" value="3"/>
+            </choice>
+        </element>
+        <element choice="1" label="Severity Setter" max_length="40" name="severity_setter" type="choice">
+            <choice>
+                <element label="Severity 1" value="1"/>
+                <element label="Severity 2" value="2"/>
+                <element label="Severity 3" value="3"/>
+            </choice>
+        </element>
+    </element>
+</database>

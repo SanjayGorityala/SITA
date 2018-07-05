@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_documentation element="u_risk_closure_desc" label="Risk closure description" language="en" table="x_211112_sita_risk_risk_sita">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>u_risk_closure_desc</element>
+            <help/>
+            <hint/>
+            <label>Risk closure description</label>
+            <language>en</language>
+            <name>x_211112_sita_risk_risk_sita</name>
+            <plural>Risk closure descriptions</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-04-12 16:12:21</sys_created_on>
+            <sys_customer_update>true</sys_customer_update>
+            <sys_id>725037634f5113000821a7d18110c746</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Risk closure description</sys_name>
+            <sys_package display_value="SITA Risk Management" source="x_211112_sita_risk">dc11d3234f1113000821a7d18110c721</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="SITA Risk Management">dc11d3234f1113000821a7d18110c721</sys_scope>
+            <sys_update_name>sys_documentation_x_211112_sita_risk_risk_sita_u_risk_closure_desc_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-04-12 16:12:21</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

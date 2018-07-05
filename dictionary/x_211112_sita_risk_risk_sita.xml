@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element audit="true" extends="task" label="Risk_SITA" max_length="40" name="x_211112_sita_risk_risk_sita" sizeclass="6" type="collection">
+        <element label="Customer Phone" max_length="20" name="customer_phone" type="phone_number_e164"/>
+        <element label="Associated Mitigation Plan" max_length="32" name="u_associated_mit" reference="x_211112_sita_risk_mitigation_sita" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Category of Risk" max_length="40" name="u_category_risk" type="string">
+            <choice>
+                <element label="Availability" sequence="0" value="availability"/>
+                <element label="Performance" sequence="1" value="performance"/>
+                <element label="Dependency" sequence="2" value="dependency"/>
+                <element label="Financial" sequence="3" value="financial"/>
+                <element label="Security" sequence="4" value="security"/>
+                <element label="Other" sequence="5" value="other"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="Customer email" max_length="40" name="u_cust_email" type="string"/>
+        <element label="Customer Risk Owner" max_length="32" name="u_cust_owner" reference="sys_user" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" default="-- None --" label="Mitigation Status" max_length="40" name="u_mitigation_status" type="string">
+            <choice>
+                <element label="Submitted" sequence="0" value="Submitted"/>
+                <element label="Validated" sequence="1" value="Validated"/>
+                <element label="On going" sequence="2" value="On going"/>
+                <element label="Rejected" sequence="3" value="Rejected"/>
+                <element label="Completed" sequence="4" value="Completed"/>
+            </choice>
+        </element>
+        <element choice="1" label="Mitigation Status" max_length="40" name="u_mit_status" reference="x_211112_sita_risk_mitigation_sita" type="reference">
+            <choice>
+                <element label="Submitted" sequence="0" value="Submitted"/>
+                <element label="Validated" sequence="1" value="Validated"/>
+                <element label="On going" sequence="2" value="On going"/>
+                <element label="Rejected" sequence="3" value="Rejected"/>
+                <element label="Completed" sequence="4" value="Completed"/>
+            </choice>
+        </element>
+        <element label="Mitigation Target Completion Date" max_length="40" name="u_mit_target" reference="x_211112_sita_risk_mitigation_sita" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="Risk closure description" max_length="4000" name="u_risk_closure_desc" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="3" label="Severity" max_length="40" name="u_severity" read_only="true" type="string">
+            <choice>
+                <element label="Severity 1" sequence="0" value="1"/>
+                <element label="Severity 2" sequence="1" value="2"/>
+                <element label="Severity 3" sequence="2" value="3"/>
+            </choice>
+        </element>
+        <element default="9f41df8b4fc113000821a7d18110c735" label="SITA Owner" max_length="32" name="u_sita_owner" reference="sys_user" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="Site" max_length="40" name="u_site" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Status Test" max_length="40" name="u_status_test" type="string"/>
+    </element>
+</database>
