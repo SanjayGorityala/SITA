@@ -15,7 +15,7 @@
         </element>
         <element attributes="edge_encryption_enabled=true" label="Customer email" max_length="40" name="u_cust_email" type="string"/>
         <element label="Customer Risk Owner" max_length="32" name="u_cust_owner" reference="sys_user" type="reference"/>
-        <element attributes="edge_encryption_enabled=true" choice="1" default="-- None --" label="Mitigation Status" max_length="40" name="u_mitigation_status" type="string">
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Mitigation Status" max_length="40" name="u_mitigation_status" read_only="true" type="string">
             <choice>
                 <element label="Submitted" sequence="0" value="Submitted"/>
                 <element label="Validated" sequence="1" value="Validated"/>
@@ -24,7 +24,7 @@
                 <element label="Completed" sequence="4" value="Completed"/>
             </choice>
         </element>
-        <element choice="1" label="Mitigation Status" max_length="40" name="u_mit_status" reference="x_211112_sita_risk_mitigation_sita" type="reference">
+        <element choice="1" dependent="u_associated_mit" dependent_on_field="u_associated_mit" label="Mitigation Status" max_length="40" name="u_mit_status" type="choice" use_dependent_field="true">
             <choice>
                 <element label="Submitted" sequence="0" value="Submitted"/>
                 <element label="Validated" sequence="1" value="Validated"/>
@@ -44,6 +44,6 @@
         </element>
         <element default="9f41df8b4fc113000821a7d18110c735" label="SITA Owner" max_length="32" name="u_sita_owner" reference="sys_user" type="reference"/>
         <element attributes="edge_encryption_enabled=true" label="Site" max_length="40" name="u_site" type="string"/>
-        <element attributes="edge_encryption_enabled=true" label="Status Test" max_length="40" name="u_status_test" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Status Test" max_length="40" name="u_status_test" read_only="true" type="string"/>
     </element>
 </database>

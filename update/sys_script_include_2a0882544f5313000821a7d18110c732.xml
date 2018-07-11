@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_211112_sita_risk.GetAssociatedMitigationStatus</api_name>
+        <client_callable>true</client_callable>
+        <description/>
+        <name>GetAssociatedMitigationStatus</name>
+        <script><![CDATA[var GetAssociatedMitigationStatus = Class.create();
+GetAssociatedMitigationStatus.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+	//Returns the Date/Time of right now.
+	getMitigationStatus: function(){
+		var now = new GlideRecord('x_211112_sita_risk_mitigation_sita'); //Now Date/Time
+		now.get(this.getParameter('sysparm_associated_mit'));
+		return now.u_mit_status;
+		//now.addQuery('number','MTG001020');
+		//now.query();
+		// 	while(now.next()){
+			// 	var myStatus = now.getValue('u_mit_status');
+			// 	return myStatus;
+			// }
+		},
+		type: 'GetAssociatedMitigationStatus'
+	});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-07-10 16:23:22</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>2a0882544f5313000821a7d18110c732</sys_id>
+        <sys_mod_count>16</sys_mod_count>
+        <sys_name>GetAssociatedMitigationStatus</sys_name>
+        <sys_package display_value="SITA Risk Management" source="x_211112_sita_risk">dc11d3234f1113000821a7d18110c721</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="SITA Risk Management">dc11d3234f1113000821a7d18110c721</sys_scope>
+        <sys_update_name>sys_script_include_2a0882544f5313000821a7d18110c732</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-07-11 14:02:32</sys_updated_on>
+    </sys_script_include>
+</record_update>

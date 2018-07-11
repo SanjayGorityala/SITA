@@ -5,55 +5,41 @@
             <element>u_associated_mit</element>
             <position>0</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2018-04-15 17:50:32</sys_created_on>
-            <sys_id>1e9363604fad13000821a7d18110c7cc</sys_id>
+            <sys_created_on>2018-07-11 13:58:42</sys_created_on>
+            <sys_id>e2d0feec4f9b13000821a7d18110c796</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Mitigation Plan" display_value="Mitigation Plan" name="x_211112_sita_risk_risk_sita" sys_domain="global" view="Default view">a4b0b7634f5113000821a7d18110c7e2</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2018-04-15 17:50:32</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>u_mitigation_status</element>
-            <position>1</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2018-04-15 17:50:32</sys_created_on>
-            <sys_id>9e9363604fad13000821a7d18110c7cc</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="Mitigation Plan" display_value="Mitigation Plan" name="x_211112_sita_risk_risk_sita" sys_domain="global" view="Default view">a4b0b7634f5113000821a7d18110c7e2</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2018-04-15 17:50:32</sys_updated_on>
+            <sys_updated_on>2018-07-11 13:58:42</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>.split</element>
-            <position>2</position>
+            <position>1</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2018-04-15 17:50:32</sys_created_on>
-            <sys_id>129363604fad13000821a7d18110c7cd</sys_id>
+            <sys_created_on>2018-07-11 13:58:42</sys_created_on>
+            <sys_id>66d0feec4f9b13000821a7d18110c796</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Mitigation Plan" display_value="Mitigation Plan" name="x_211112_sita_risk_risk_sita" sys_domain="global" view="Default view">a4b0b7634f5113000821a7d18110c7e2</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2018-04-15 17:50:32</sys_updated_on>
+            <sys_updated_on>2018-07-11 13:58:42</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>u_status_test</element>
-            <position>3</position>
+            <element>u_mitigation_status</element>
+            <position>2</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2018-04-15 17:50:32</sys_created_on>
-            <sys_id>929363604fad13000821a7d18110c7cd</sys_id>
+            <sys_created_on>2018-07-11 13:58:42</sys_created_on>
+            <sys_id>e6d0feec4f9b13000821a7d18110c796</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Mitigation Plan" display_value="Mitigation Plan" name="x_211112_sita_risk_risk_sita" sys_domain="global" view="Default view">a4b0b7634f5113000821a7d18110c7e2</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2018-04-15 17:50:32</sys_updated_on>
+            <sys_updated_on>2018-07-11 13:58:42</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <record_update sys_domain="global" table="sys_ui_policy">
     <sys_ui_policy action="INSERT_OR_UPDATE">
-        <active>true</active>
+        <active>false</active>
         <conditions table="x_211112_sita_risk_risk_sita">u_associated_mitISNOTEMPTY^EQ<item endquery="false" field="u_associated_mit" goto="false" newquery="false" operator="ISNOTEMPTY" or="false" value=""/>
             <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
         </conditions>
@@ -43,7 +43,7 @@ var getMit = new GlideAjax('GetAssociatedMitigation');
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>04d49b684f6d13000821a7d18110c7a0</sys_id>
-        <sys_mod_count>12</sys_mod_count>
+        <sys_mod_count>13</sys_mod_count>
         <sys_name>Get associated mitigation details</sys_name>
         <sys_overrides/>
         <sys_package display_value="SITA Risk Management" source="x_211112_sita_risk">dc11d3234f1113000821a7d18110c721</sys_package>
@@ -52,7 +52,7 @@ var getMit = new GlideAjax('GetAssociatedMitigation');
         <sys_scope display_value="SITA Risk Management">dc11d3234f1113000821a7d18110c721</sys_scope>
         <sys_update_name>sys_ui_policy_04d49b684f6d13000821a7d18110c7a0</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-04-18 17:16:15</sys_updated_on>
+        <sys_updated_on>2018-07-10 16:24:21</sys_updated_on>
         <table>x_211112_sita_risk_risk_sita</table>
         <ui_type>0</ui_type>
         <view/>

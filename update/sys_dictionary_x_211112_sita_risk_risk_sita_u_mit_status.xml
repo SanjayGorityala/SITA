@@ -16,8 +16,8 @@
         <default_value/>
         <defaultsort/>
         <delete_roles/>
-        <dependent/>
-        <dependent_on_field/>
+        <dependent>u_associated_mit</dependent>
+        <dependent_on_field>u_associated_mit</dependent_on_field>
         <display>false</display>
         <dynamic_creation>false</dynamic_creation>
         <dynamic_creation_script/>
@@ -28,7 +28,7 @@
         <foreign_database/>
         <function_definition/>
         <function_field>false</function_field>
-        <internal_type display_value="Reference">reference</internal_type>
+        <internal_type display_value="Choice">choice</internal_type>
         <mandatory>false</mandatory>
         <max_length>40</max_length>
         <name>x_211112_sita_risk_risk_sita</name>
@@ -36,7 +36,7 @@
         <primary>false</primary>
         <read_only>false</read_only>
         <read_roles/>
-        <reference display_value="" name="x_211112_sita_risk_mitigation_sita">x_211112_sita_risk_mitigation_sita</reference>
+        <reference/>
         <reference_cascade_rule/>
         <reference_floats>false</reference_floats>
         <reference_key/>
@@ -51,7 +51,7 @@
         <sys_created_on>2018-04-15 15:34:39</sys_created_on>
         <sys_customer_update>true</sys_customer_update>
         <sys_id>84844fa04f6d13000821a7d18110c779</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name>Mitigation Status</sys_name>
         <sys_package display_value="SITA Risk Management" source="x_211112_sita_risk">dc11d3234f1113000821a7d18110c721</sys_package>
         <sys_policy/>
@@ -59,11 +59,11 @@
         <sys_scope display_value="SITA Risk Management">dc11d3234f1113000821a7d18110c721</sys_scope>
         <sys_update_name>sys_dictionary_x_211112_sita_risk_risk_sita_u_mit_status</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-04-15 17:35:02</sys_updated_on>
+        <sys_updated_on>2018-07-11 13:42:12</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
-        <use_dependent_field>false</use_dependent_field>
+        <use_dependent_field>true</use_dependent_field>
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
