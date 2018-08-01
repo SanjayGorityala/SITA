@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <database>
-    <element audit="true" extends="task" label="Risk_SITA" max_length="40" name="x_211112_sita_risk_risk_sita" sizeclass="6" type="collection">
+    <element audit="true" extends="task" label="Risk_SITA" max_length="40" name="x_211112_sita_risk_risk_sita" sizeclass="7" type="collection">
         <element label="Customer Phone" max_length="20" name="customer_phone" type="phone_number_e164"/>
         <element label="Associated Mitigation Plan" max_length="32" name="u_associated_mit" reference="x_211112_sita_risk_mitigation_sita" type="reference"/>
         <element attributes="edge_encryption_enabled=true" choice="1" label="Category of Risk" max_length="40" name="u_category_risk" type="string">

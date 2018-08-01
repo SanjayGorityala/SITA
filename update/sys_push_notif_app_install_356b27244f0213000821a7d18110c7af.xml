@@ -2,13 +2,13 @@
 <record_update table="sys_push_notif_app_install">
     <sys_push_notif_app_install action="INSERT_OR_UPDATE">
         <active>true</active>
-        <last_registered_on>2018-05-10 15:00:16</last_registered_on>
+        <last_registered_on>2018-07-20 17:13:30</last_registered_on>
         <sys_class_name>sys_push_notif_app_install</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2018-05-10 14:56:01</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>356b27244f0213000821a7d18110c7af</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name>76c8b4b54fdbb17533ac351794b92ca47483d2e899e80e1a0f59d5f1cc38002a</sys_name>
         <sys_package display_value="SITA Risk Management" source="x_211112_sita_risk">dc11d3234f1113000821a7d18110c721</sys_package>
         <sys_policy/>
@@ -18,7 +18,7 @@
         <sys_scope display_value="SITA Risk Management">dc11d3234f1113000821a7d18110c721</sys_scope>
         <sys_update_name>sys_push_notif_app_install_356b27244f0213000821a7d18110c7af</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-05-10 15:00:16</sys_updated_on>
+        <sys_updated_on>2018-07-20 17:13:30</sys_updated_on>
         <sys_user_id display_value="Bruce Wayne">6816f79cc0a8016401c5a33be04be441</sys_user_id>
         <token>76c8b4b54fdbb17533ac351794b92ca47483d2e899e80e1a0f59d5f1cc38002a</token>
     </sys_push_notif_app_install>

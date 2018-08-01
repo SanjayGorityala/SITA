@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <database>
-    <element audit="true" extends="task" label="Mitigation_SITA" max_length="40" name="x_211112_sita_risk_mitigation_sita" sizeclass="12" type="collection">
+    <element attributes="email_client = true" audit="true" extends="task" label="Mitigation_SITA" max_length="40" name="x_211112_sita_risk_mitigation_sita" sizeclass="12" type="collection">
+        <element label="Associated Tasks" max_length="32" name="associated_tasks" reference="x_211112_sita_risk_mitigation_task" type="reference"/>
         <element label="Associated risk" max_length="32" name="u_associated_risk" reference="x_211112_sita_risk_risk_sita" type="reference"/>
         <element label="Manager" max_length="32" name="u_manager" reference="sys_user" type="reference"/>
         <element attributes="edge_encryption_enabled=true" choice="3" default="accept" label="Mitigation Category" max_length="40" name="u_mit_category" type="string">

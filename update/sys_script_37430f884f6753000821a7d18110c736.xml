@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_211112_sita_risk_risk_sita</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition table="x_211112_sita_risk_risk_sita">state=7^EQ<item endquery="false" field="state" goto="false" newquery="false" operator="=" or="false" value="7"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter_condition>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>Populate Risk ML </name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+	
+	// Add your code here
+	var newMLR = new GlideRecord('u_risk_machine');
+	newMLR.addQuery('u_assignment_group',current.assignment_group);
+	newMLR.query();
+	if(newMLR.next())
+		{
+		var splitText = current.short_description.split(" ");
+		for (var i = 0; i < splitText.length; i++){
+			newMLR.u_keywords += "," + splitText[i];
+		}
+		var completeArray = newMLR.u_keywords.split(",");
+		var uniqueKeywords = new global.ArrayUtil().unique(completeArray);
+		gs.addInfoMessage(uniqueKeywords.toString());
+		newMLR.u_keywords = uniqueKeywords.toString();
+		newMLR.u_temporary_keywords += ";"+current.number;
+		newMLR.update('Assignment group already exists');
+	}
+	else{
+		gs.addInfoMessage('In ELSE loop');
+		var newKeywords = current.short_description.split(" ");
+		newKeywords = new global.ArrayUtil().unique(newKeywords);
+		newMLR.setValue('u_keywords',newKeywords.toString());
+		newMLR.setValue('u_temporary_keywords',current.number);
+		newMLR.setValue('u_assignment_group',current.assignment_group);
+		newMLR.insert();
+	}
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-07-22 12:19:06</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>37430f884f6753000821a7d18110c736</sys_id>
+        <sys_mod_count>30</sys_mod_count>
+        <sys_name>Populate Risk ML </sys_name>
+        <sys_overrides/>
+        <sys_package display_value="SITA Risk Management" source="x_211112_sita_risk">dc11d3234f1113000821a7d18110c721</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="SITA Risk Management">dc11d3234f1113000821a7d18110c721</sys_scope>
+        <sys_update_name>sys_script_37430f884f6753000821a7d18110c736</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-07-22 14:17:31</sys_updated_on>
+        <template/>
+        <when>before</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=37430f884f6753000821a7d18110c736"/>
+</record_update>

@@ -2,7 +2,7 @@
 <record_update table="wf_workflow_version">
     <wf_workflow_version action="INSERT_OR_UPDATE">
         <active>true</active>
-        <activity_stages>{"activities":{},"ends":["d4ba7b2c4f7513000821a7d18110c7a0"],"subflows":[],"stages":{}}</activity_stages>
+        <activity_stages>{"activities":{},"subflows":[],"stages":{},"ends":["d4ba7b2c4f7513000821a7d18110c7a0"]}</activity_stages>
         <after_business_rules>false</after_business_rules>
         <checked_out/>
         <checked_out_by/>
@@ -34,9 +34,9 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2018-04-28 05:47:07</sys_created_on>
         <sys_id>54ba3b2c4f7513000821a7d18110c75a</sys_id>
-        <sys_mod_count>13</sys_mod_count>
+        <sys_mod_count>14</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-05-10 15:02:08</sys_updated_on>
+        <sys_updated_on>2018-07-15 14:16:04</sys_updated_on>
         <table>x_211112_sita_risk_mitigation_sita</table>
         <timezone/>
         <validated>true</validated>
